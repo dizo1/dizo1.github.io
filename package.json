@@ -1,0 +1,11 @@
+{
+  "name": "currconvert",
+  "version": "1.0.0",
+  "description": "currency converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "dizo"
+  },
+  "author": "",
+  "license": "ISC"
+}

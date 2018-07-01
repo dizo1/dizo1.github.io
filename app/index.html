@@ -1,0 +1,47 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/curr.css">
+    <script src="../scripts/curr-converter.js"></script>
+    </head>
+    <body >
+        <div class="container main-panel" align="center">
+            <div class="col-md-offset-4 col-md-4 panel">
+                <div class="row header">
+                    Currency Converter
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Amount</div>
+                    <div class="col-md-8">
+                        <input type="text" oninput="convertCurrency()" class="form-control" id="amount"/>
+                    </div>
+                </div>
+                    <div class="row">
+                        Result : <span id="result"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">From </div>
+                    <div class="col-md-6"><select onchange="convertCurrency()"  class="form-control" id="from">Currency</select></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">To </div>
+                    <div class="col-md-6"><select onchange="convertCurrency()"  class="form-control" id="to">Currency</select></div>
+                    <div class="col-md-6"><button type="button"  id="convertButton" class="btn btn-primary btn-cons">Convert</button></div>
+                </div>
+                <!--<div class="row">
+                    
+                   <button type="button"  id="convertButton" class="btn btn-primary btn-cons">Convert</button>
+                </div>-->
+            </div>
+        </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
+
+    </body>
+</html>
